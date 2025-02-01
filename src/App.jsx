@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ContactList from "./components/ContactList/ContactList";
 import SearchBox from "./components/SearchBox/SearchBox";
+import ContactForm from "./components/ContactForm/ContactForm";
 
   const contacts = [
     { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
@@ -18,6 +19,7 @@ function App() {
   return (
     <div>
       <h1>Phonebook</h1>
+      <ContactForm />
       <SearchBox value={searchFriend} onChange={ setSearchFriend } />
       <ContactList contacts={ filteredFriends } />
       
